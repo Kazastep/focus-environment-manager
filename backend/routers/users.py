@@ -1,4 +1,4 @@
-from fastapi import APIRouter, status, Response
+from fastapi import APIRouter, status, Response, HTTPException
 from fastapi.responses import JSONResponse
 
 from models import User
@@ -28,6 +28,13 @@ async def post_user(user: User):
     else:
         key = max(users_db.keys()) + 1
 
+    for existing_user in users_db.values():
+        if existing_user.user_email == user.user_email:
+            raise HTTPException(status_code=status.HTTP_409_CONFLICT, detail="Почта занята")
+
+        if existing_user.user_name == user.user_name:
+            raise HTTPException(status_code=status.HTTP_409_CONFLICT, detail="Имя занято")
+        
     user.user_id = key
     users_db[key] = user
 
