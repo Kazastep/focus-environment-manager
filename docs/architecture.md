@@ -14,3 +14,8 @@ FastAPI Backend
 PostgreSQL
     ↓
 Web Dashboard
+```
+
+## Требования к Компоненты
+
+- [Требования к MVP](docs/requirements.md)
