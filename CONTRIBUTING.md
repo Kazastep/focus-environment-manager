@@ -33,9 +33,10 @@ refactor/
 Желательно указать номер Issue:
 
 ```text
-feature/12-active-window
-fix/18-idle-calculation
-docs/5-architecture
+feature/AN-01-activity-metrics
+fix/BE-03-session-history
+docs/DB-02-schema-description
+refactor/BE-01-backend-structure
 ```
 
 ## Коммиты

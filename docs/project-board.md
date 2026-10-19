@@ -90,7 +90,8 @@ BE-01 Настроить базовый FastAPI backend
 Название ветки:
 
 ```text
-feature/1-fastapi-setup
+тип/направление-номер-короткое-название
+feature/be-02-session-api
 ```
 
 В описании Pull Request указываем:
@@ -218,7 +219,8 @@ BE-04 Настроить Docker Compose для локальной разрабо
 Для названий веток используем номер GitHub Issue:
 
 ```text
-feature/16-docker-compose
+тип/направление-номер-короткое-название
+feature/be-02-session-api
 ```
 
 Для связи Pull Request с задачей:
