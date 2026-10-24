@@ -53,6 +53,31 @@ Focus Environment Manager собирает данные об активност�
 | Frontend | Будет определено командой |
 | Управление проектом | GitHub Issues, Projects, Pull Requests |
 
+## База данных
+
+Для хранения данных используется **PostgreSQL 16**, запущенный через Docker Compose.
+
+Backend взаимодействует с PostgreSQL через асинхронный SQLAlchemy.
+
+В базе данных предусмотрены четыре основные таблицы: `users`, `sessions`, `events`, `statistics`.
+
+**Документация:**
+
+- [Настройка и запуск базы данных](docs/database.md)
+- [Технические решения по базе данных](docs/decisions/0001-database.md)
+
+Для локального запуска PostgreSQL:
+
+```bash
+docker compose up -d
+```
+
+Для создания отсутствующих таблиц:
+
+```bash
+python -m database.core
+```
+
 ## Структура репозитория
 
 ```text

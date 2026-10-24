@@ -4,7 +4,7 @@ services:
   db:
     image: postgres:16-alpine
     ports: 
-    - "5440:5432"
+    - "${POSTGRES_PORT}:5432"
 
     volumes: 
     - pgdata:/var/lib/postgresql/data
