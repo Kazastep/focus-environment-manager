@@ -14,10 +14,10 @@ class User(BaseModel):
 
 # Поля класса Session
 class Session(BaseModel):
-    session_id: int | None = None
+    session_id: int
     user_id: int
     started_at: datetime
-    ended_at: datetime | None = None
+    ended_at: datetime
 
 # Поля класса Event
 class Event(BaseModel):
@@ -30,7 +30,7 @@ class Event(BaseModel):
 class Statistics(BaseModel):
     statistics_id: int
     user_id: int
-    statistic_date: date
+    statistics_date: date
     total_focus_time: int
     idle_ratio: float
     top_apps: list[str]
