@@ -1,7 +1,7 @@
 from fastapi import APIRouter, status, Response
 from fastapi.responses import JSONResponse
 
-from models import Session
+from backend.pydantic.models import Session
 from storage import sessions_db
 
 router = APIRouter(prefix="/sessions")

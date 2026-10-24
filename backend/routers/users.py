@@ -1,7 +1,7 @@
 from fastapi import APIRouter, status, Response, HTTPException
 from fastapi.responses import JSONResponse
 
-from models import User
+from backend.pydantic.models import User
 from storage import users_db
 
 
