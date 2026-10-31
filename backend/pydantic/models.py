@@ -14,10 +14,10 @@ class User(BaseModel):
 
 # Поля класса Session
 class Session(BaseModel):
-    session_id: int
+    session_id: int | None = None
     user_id: int
     started_at: datetime
-    ended_at: datetime
+    ended_at: datetime | None = None
 
 # Поля класса Event
 class Event(BaseModel):
