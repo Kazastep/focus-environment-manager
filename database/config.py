@@ -1,4 +1,5 @@
 """ Загрузка настроек PostgreSQL и формирование URL подключения."""
+
 from pydantic_settings import BaseSettings, SettingsConfigDict
 from pathlib import Path
 
