@@ -1,3 +1,4 @@
+""" Приемник роутеров наших сущностей. """
 from fastapi import FastAPI
 
 from routers.sessions import router as sessions_router

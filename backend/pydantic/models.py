@@ -1,8 +1,7 @@
+""" Pydantic-модели для валидации данных. """
 from datetime import datetime, date
 
 from pydantic import BaseModel
-
-""" Pydantic-модели для валидации данных. """
 
 # Поля класса User
 # Возможно разделение на UserCreate и UserRead
@@ -14,10 +13,10 @@ class User(BaseModel):
 
 # Поля класса Session
 class Session(BaseModel):
-    session_id: int
+    session_id: int | None = None
     user_id: int
     started_at: datetime
-    ended_at: datetime
+    ended_at: datetime | None = None
 
 # Поля класса Event
 class Event(BaseModel):

@@ -77,3 +77,12 @@ PR должен быть связан с Issue:
 ```text
 Closes #12
 ```
+
+## Обновление рабочей ветки
+
+Перед началом новой задачи:
+
+```bash
+git switch dev
+git pull origin dev
+git switch -c feature/BE-04-example
