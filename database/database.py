@@ -4,13 +4,13 @@ from sqlalchemy import URL, create_engine, text
 from database.config import settings
 import asyncio
 
-
-engine = create_engine(
-    url= settings.DATABASE_URL_psycopg,
-    echo=False,
-    pool_size=5,
-    max_overflow=10
-)
+# Сихронный
+# engine = create_engine(
+#     url= settings.DATABASE_URL_psycopg,
+#     echo=False,
+#     pool_size=5,
+#     max_overflow=10
+# )
 
 engine_asy = create_async_engine(
     url= settings.DATABASE_URL_asyncpg,

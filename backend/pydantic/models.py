@@ -1,8 +1,7 @@
+""" Pydantic-модели для валидации данных. """
 from datetime import datetime, date
 
 from pydantic import BaseModel
-
-""" Pydantic-модели для валидации данных. """
 
 # Поля класса User
 # Возможно разделение на UserCreate и UserRead

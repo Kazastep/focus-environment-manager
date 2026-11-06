@@ -1,3 +1,6 @@
+"""
+Создание таблиц PostgreSQL на основе моделей SQLAlchemy.
+"""
 import asyncio
 
 from database.models import metadata_obj
