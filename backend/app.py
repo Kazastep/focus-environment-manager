@@ -1,9 +1,9 @@
 """ Приемник роутеров наших сущностей. """
 from fastapi import FastAPI
 
-from routers.sessions import router as sessions_router
-from routers.events import router as events_router
-from routers.users import router as users_router
+from backend.routers.sessions import router as sessions_router
+from backend.routers.events import router as events_router
+from backend.routers.users import router as users_router
 
 app = FastAPI()
 

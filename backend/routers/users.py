@@ -5,7 +5,7 @@ from fastapi import APIRouter, status, Response, HTTPException
 from fastapi.responses import JSONResponse
 
 from backend.pydantic.models import User
-from storage import users_db # Временное хранилище
+from backend.storage import users_db # Временное хранилище
 
 # Роутер сущности
 router = APIRouter(prefix="/users")

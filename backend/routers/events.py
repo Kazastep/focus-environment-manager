@@ -10,7 +10,7 @@ from fastapi import APIRouter, status, Response
 from fastapi.responses import JSONResponse
 
 from backend.pydantic.models import Event
-from storage import events_db
+from backend.storage import events_db
 
 
 router = APIRouter(prefix="/events")
